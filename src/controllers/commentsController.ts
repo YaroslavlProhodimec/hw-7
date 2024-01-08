@@ -29,6 +29,7 @@ export const deleteComment = async (
   res: Response
 ) => {
   const deletedComment = commentsService.deleteCommentById(req.params.id);
+  console.log(deletedComment,'deletedComment')
   if (!deletedComment) {
     res.sendStatus(StatusCodes.NOT_FOUND);
   } else {
@@ -45,6 +46,8 @@ export const updateComment = async (
     req.params.id,
     content
   );
+  console.log(updatedComment,'updatedComment')
+
   if (!updatedComment) {
     res.sendStatus(StatusCodes.NOT_FOUND);
   } else {
