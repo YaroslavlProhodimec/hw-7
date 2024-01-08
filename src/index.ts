@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 const startApp = async () => {
   await runDB();
   app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`);
+    console.log(`Example 1 app listening on port ${port}`);
   });
 };
 
