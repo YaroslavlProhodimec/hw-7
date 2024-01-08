@@ -20,7 +20,7 @@ export const emailAdapter = {
         })
       );
       let mailOptions = {
-        from: "Baletrot",
+        from: "Tarantino",
         to: email,
         subject: "Email confirmation code",
         html,

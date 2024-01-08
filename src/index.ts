@@ -3,7 +3,9 @@ import { app } from "./settings";
 import * as dotenv from "dotenv";
 
 dotenv.config();
-const port = process.env.PORT || 5000;
+const port =
+    // process.env.PORT ||
+    5000;
 
 const startApp = async () => {
   await runDB();
